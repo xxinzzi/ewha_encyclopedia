@@ -1,0 +1,20 @@
+.bottom-nav{
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+}
+.bottom-nav__column{
+  width: 33%
+}
+.bottom-nav__column:first-child span{
+  margin-right: 5px;
+}
+.bottom-nav__column:nth-child(2){
+  display: flex;
+  justify-content: center;
+}
+.bottom-nav__column:last-child{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
