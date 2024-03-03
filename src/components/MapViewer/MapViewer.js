@@ -4,7 +4,7 @@ import styles from "./MapViewer.module.css";
 
 function MapViewer() {
   return (
-    <div class="map-viewer">
+    <div className={styles.mapViewer}>
       <img src="../../../ewha_map.jpg" />
     </div>
   );

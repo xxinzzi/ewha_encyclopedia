@@ -1,0 +1,10 @@
+.selectorDiv{
+    display: flex;
+    background-color: lightgray;
+    margin: 8px;
+    border-radius: 7px;
+}
+.label{
+    margin: 8px;
+    font-size: 13px;
+}

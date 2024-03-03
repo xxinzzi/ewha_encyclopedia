@@ -1,3 +1,11 @@
+.button{
+    background-color: rgb(224, 224, 224);
+    font-size: 13px;
+    color: rgb(45, 84, 181);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+}
 .route_explain{
     font-style: italic;
     font-size:20px;

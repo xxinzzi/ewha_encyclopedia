@@ -11,8 +11,8 @@ const LocationSelector = ({ label, locations, onSelect }) => {
   };
 
   return (
-    <div>
-      <label>{label}</label>
+    <div className={styles.selectorDiv}>
+      <label className={styles.label}>{label}</label>
       <select value={selectedLocation} onChange={handleSelectChange}>
         <option value="" disabled>
           Select {label}

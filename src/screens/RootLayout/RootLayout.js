@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
+import styles from "./RootLayout.module.css";
 import GNB from "../../components/GNB/GNB";
 
 const RootLayout = ({ children }) => {
@@ -22,10 +23,12 @@ const RootLayout = ({ children }) => {
   }
 
   return (
-    <div className="root-layout">
-      <h3>{tabName}</h3>
-      <Outlet />
-      {children}
+    <div className={styles.rootLayout}>
+      <h3 className={styles.tabName}>{tabName}</h3>
+      <div className={styles.outlet}>
+        <Outlet />
+        {children}
+      </div>
       <GNB />
     </div>
   );
