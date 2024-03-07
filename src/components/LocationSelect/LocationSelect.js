@@ -11,17 +11,15 @@ function LocationSelect({ onSearch }) {
     const handleSearch = async () => {
       if (startLocation && endLocation) {
         // 여기에서 실제 경로 및 이미지 정보를 가져오는 로직을 수행하고,
-        // 그 정보를 onSearch 콜백을 통해 전달합니다.
-        const route = "경로 정보"; // 실제 경로 정보를 가져오는 로직이 필요합니다.
-        const img = "이미지 URL"; // 실제 이미지 정보를 가져오는 로직이 필요합니다.
+        // 그 정보를 onSearch 콜백을 통해 전달
+        const route = "경로 정보"; // 실제 경로 정보를 가져오는 로직이 필요
+        const img = "이미지 URL"; // 실제 이미지 정보를 가져오는 로직이 필요
         onSearch(startLocation, endLocation, route, img);
-      } else {
-        alert("출발지와 도착지를 모두 선택하세요.");
       }
     };
 
     handleSearch();
-  }, [startLocation, endLocation, onSearch]);
+  }, [startLocation, endLocation]);
 
   const handleStartSelect = (selectedLocation) => {
     setStartLocation(selectedLocation);
@@ -32,7 +30,7 @@ function LocationSelect({ onSearch }) {
   };
 
   return (
-    <div className={styles.locationSelect}>
+    <div className={styles.locationSelectDiv}>
       <LocationSelector
         label="출발"
         locations={["정문", "후문", "이하우스"]}

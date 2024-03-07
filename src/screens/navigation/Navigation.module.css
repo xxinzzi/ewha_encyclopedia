@@ -1,0 +1,11 @@
+.viewer{
+    width: 300px;
+    position: relative;
+    height:100vh;
+    top: 80px;
+    bottom: 40px;
+}
+.mapViewer{
+    display: flex;
+    justify-content: center;
+}

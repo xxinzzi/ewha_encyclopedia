@@ -4,11 +4,21 @@
     width: 300px;
     justify-content: center;
     flex-direction: column;
-}
-.outlet{
-    align-items: center;
+    position: relative;
 }
 .tabName{
-   font-size: 20px;
-   margin: 5px 10px;
+    display: flex;
+    width: 300px;
+    font-size: 20px;
+    margin: 5px 10px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+.outlet{
+    width: 300px;
+    align-items: center;
+    position: absolute;
+    top: 40px;
 }

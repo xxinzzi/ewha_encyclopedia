@@ -1,12 +1,24 @@
 .button{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(225, 225, 225);
     font-size: 13px;
-    color: rgb(45, 84, 181);
+    color: black;
+    height: 30px;
+    width: 60px;
     margin: 5px;
     padding: 5px;
     border-radius: 7px;
+    border: none;
 }
-.route_explain{
-    font-style: italic;
-    font-size:20px;
+.selectedButton {
+    background-color: #006540;
+    font-size: 13px;
+    color: white;
+}
+.routeContainer{
+    display: flex;
+    margin: 5px;
+
+}
+.route{
+    font-size:15px;
 }

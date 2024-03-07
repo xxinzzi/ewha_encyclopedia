@@ -1,13 +1,14 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import styles from "./MapViewer.module.css";
+import ewha from "./ewha.jpg";
 
-function MapViewer() {
+const MapViewer = () => {
   return (
     <div className={styles.mapViewer}>
-      <img src="../../../ewha_map.jpg" />
+      <img src={ewha} />
     </div>
   );
-}
+};
 
 export default MapViewer;

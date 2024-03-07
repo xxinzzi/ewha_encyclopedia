@@ -1,6 +1,8 @@
 .selectorDiv{
     display: flex;
-    background-color: lightgray;
+    background-color: rgb(225,225,225);
+    height: 30px;
+    width: 284px;
     margin: 8px;
     border-radius: 7px;
 }

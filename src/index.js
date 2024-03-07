@@ -2,9 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 
-ReactDOM.render(
+const root = document.getElementById("root");
+
+const rootElement = (
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
+
+// Use createRoot to render your application
+const rootInstance = ReactDOM.createRoot(root);
+rootInstance.render(rootElement);

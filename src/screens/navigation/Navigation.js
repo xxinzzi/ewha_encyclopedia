@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LocationSelect from "../../components/LocationSelect/LocationSelect.js";
 import MapViewer from "../../components/MapViewer/MapViewer.js";
 import RouteNavigator from "../../components/RouteNavigator/RouteNavigator.js";
+import styles from "./Navigation.module.css";
 
 const Navigation = () => {
   const [routeInfo, setRouteInfo] = useState({
@@ -21,10 +22,14 @@ const Navigation = () => {
   };
 
   return (
-    <div className="navigation">
+    <div className={styles.navigation}>
       <LocationSelect onSearch={handleSearch} />
-      <MapViewer />
-      <RouteNavigator {...routeInfo} />
+      <div className={styles.viewer}>
+        <div className={styles.mapViewer}>
+          <MapViewer />
+        </div>
+        <RouteNavigator {...routeInfo} />
+      </div>
     </div>
   );
 };
