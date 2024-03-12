@@ -11,13 +11,11 @@
 }
 .selectedButton {
     background-color: #006540;
-    font-size: 13px;
     color: white;
 }
 .routeContainer{
     display: flex;
     margin: 5px;
-
 }
 .route{
     font-size:15px;

@@ -1,0 +1,10 @@
+.inputLabel{
+    font-size: 13px;
+    margin: 3px;
+}
+.inputField{
+    border: none;
+    height: 20px;
+    width: 180px;
+    margin: 3px;
+}

@@ -1,6 +1,8 @@
-.searchBar {
+.searchBarDiv{
     display: flex;
-    background-color: lightgray;
-    margin: 8px;
-    border-radius: 7px;
+    justify-self: center;
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    z-index: 999;
 }

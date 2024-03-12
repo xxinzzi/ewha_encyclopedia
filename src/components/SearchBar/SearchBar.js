@@ -4,12 +4,11 @@ import styles from "./SearchBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const SearchBar = () => {
-  const [searchQuery, setSearchQuery] = useState(""); // 검색어 상태 추가
+const SearchBar = ({ onSearch }) => {
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearchClick = (event) => {
-    console.log(searchQuery);
-    // 여기에서 검색어 활용 또는 검색 동작 수행
+  const handleSearchClick = () => {
+    onSearch(searchQuery);
   };
 
   const handleInputChange = (event) => {
@@ -24,15 +23,20 @@ const SearchBar = () => {
             <FontAwesomeIcon icon={faSearch} />
           </div>
           <input
+            className={styles.searchBarInput}
             type="text"
             placeholder="Search"
-            value={searchQuery} // 현재 검색어 표시
-            onChange={handleInputChange} // 검색어 변경 이벤트 핸들러
+            value={searchQuery}
+            onChange={handleInputChange}
           />
         </div>
       </form>
     </div>
   );
+};
+
+SearchBar.propTypes = {
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default SearchBar;

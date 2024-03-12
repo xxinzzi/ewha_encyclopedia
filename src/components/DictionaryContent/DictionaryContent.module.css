@@ -1,0 +1,64 @@
+
+.wordBox{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 15px;
+    border-bottom: solid rgb(225,225,225) 1px;
+    position: relative;
+}
+.detailButton{
+    background-color: white;
+    color: rgb(120,120,120);
+    font-size: 13px;
+    border: none;
+    position: absolute;
+    right: 5px;
+}
+.word{
+    margin: 5px;
+}
+.meaning{
+
+}
+.addButtonDiv{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+}
+.addButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80px;
+    background-color: #006540;
+    color: white;
+    font-size: 13px;
+    border-radius: 7px;
+    border: none;
+    position: absolute;
+    right: 5px;
+}
+.completeButtonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.completeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 40px;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    border: none;
+    border-radius: 7px;
+}
+.activateCompleteButton{
+    background-color: #006540;
+    color: white;
+}

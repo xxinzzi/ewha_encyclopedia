@@ -1,0 +1,26 @@
+.overlay{
+
+}
+.modal{
+    display: flex;
+    width: 280px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: rgb(225, 225, 225);
+}
+.modalChildren{
+    width: 260px;
+}
+.closeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    border: none;
+    border-radius: 7px;
+}
