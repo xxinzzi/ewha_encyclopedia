@@ -25,7 +25,7 @@ const SearchBar = ({ onSearch }) => {
           <input
             className={styles.searchBarInput}
             type="text"
-            placeholder="Search"
+            placeholder="검색"
             value={searchQuery}
             onChange={handleInputChange}
           />

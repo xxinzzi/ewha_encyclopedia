@@ -1,15 +1,16 @@
+@import "../colors.css";
 
 .wordBox{
     display: flex;
     align-items: center;
     height: 30px;
     font-size: 15px;
-    border-bottom: solid rgb(225,225,225) 1px;
+    border-bottom: solid var(--light-grey) 1px;
     position: relative;
 }
 .detailButton{
     background-color: white;
-    color: rgb(120,120,120);
+    color: var(--grey);
     font-size: 13px;
     border: none;
     position: absolute;
@@ -32,12 +33,13 @@
     justify-content: center;
     align-items: center;
     height: 30px;
-    width: 80px;
-    background-color: #006540;
+    width: 70px;
+    background-color: var(--green);
     color: white;
     font-size: 13px;
     border-radius: 7px;
     border: none;
+    margin: 5px;
     position: absolute;
     right: 5px;
 }
@@ -59,6 +61,6 @@
     border-radius: 7px;
 }
 .activateCompleteButton{
-    background-color: #006540;
+    background-color: var(--green);
     color: white;
 }

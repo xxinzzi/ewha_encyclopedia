@@ -26,6 +26,7 @@ const Dictionary = () => {
         initialWords={initialWords.filter((word) =>
           word.word.toLowerCase().includes(searchQuery.toLowerCase())
         )}
+        searchQuery={searchQuery}
       />
     </div>
   );

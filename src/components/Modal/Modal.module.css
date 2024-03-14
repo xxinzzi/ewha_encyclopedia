@@ -1,3 +1,5 @@
+@import "../colors.css";
+
 .overlay{
 
 }
@@ -7,7 +9,7 @@
     margin: 5px;
     padding: 5px;
     border-radius: 7px;
-    background-color: rgb(225, 225, 225);
+    background-color: var(--light-grey);
 }
 .modalChildren{
     width: 260px;

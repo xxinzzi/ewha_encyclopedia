@@ -1,5 +1,7 @@
+@import "../colors.css";
+
 .button{
-    background-color: rgb(225, 225, 225);
+    background-color: var(--light-grey);
     font-size: 13px;
     color: black;
     height: 30px;
@@ -10,7 +12,7 @@
     border: none;
 }
 .selectedButton {
-    background-color: #006540;
+    background-color: var(--green);
     color: white;
 }
 .routeContainer{

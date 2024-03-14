@@ -1,3 +1,5 @@
+@import "../colors.css";
+
 .gnb {
   display: flex;
   height: 40px;
@@ -7,7 +9,7 @@
   position: fixed;
   bottom: 0px;
   background-color: white;
-  border-top: solid rgb(120,120,120) 1px;
+  border-top: solid var(--grey) 1px;
 }
 
 .gnb__column {
@@ -26,7 +28,7 @@
 .tabText {
   font-size: 13px;
   padding: 5px;
-  color: rgb(120, 120, 120);
+  color: var(--grey);
 }
 
 .selectedText {

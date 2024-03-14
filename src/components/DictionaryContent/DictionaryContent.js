@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 import InputField from "../InputField/InputField";
 import Detail from "../Detail/Detail";
 
-const DictionaryContent = ({ initialWords }) => {
+const DictionaryContent = ({ initialWords, searchQuery }) => {
   const [showModal, setShowModal] = useState(false);
   const [showDetail, setShowDetail] = useState(false);
   const [word, setWord] = useState("");
@@ -32,7 +32,7 @@ const DictionaryContent = ({ initialWords }) => {
   const handleAddWord = () => {
     if (word.trim() === "" || meaning.trim() === "") {
       alert("단어와 뜻은 필수 입력사항입니다.");
-      return 0;
+      return;
     }
 
     const newWord = {
@@ -50,9 +50,16 @@ const DictionaryContent = ({ initialWords }) => {
     closeModal();
   };
 
+  // 만약 검색어가 있다면 해당 검색어를 포함하는 단어만 필터링합니다.
+  const filteredVocabs = searchQuery
+    ? vocabs.filter((item) =>
+        item.word.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : vocabs;
+
   return (
     <div className={styles.DictionaryContent}>
-      {vocabs.map((item, index) => (
+      {filteredVocabs.map((item, index) => (
         <div key={index} className={styles.wordBox}>
           <p className={styles.word}>{item.word}</p>
           <p className={styles.meaning}>{item.meaning}</p>
@@ -118,6 +125,7 @@ DictionaryContent.propTypes = {
       detail: PropTypes.string,
     })
   ).isRequired,
+  searchQuery: PropTypes.string, // 검색어 PropTypes 추가
 };
 
 export default DictionaryContent;
